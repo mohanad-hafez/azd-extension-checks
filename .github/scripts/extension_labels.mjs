@@ -51,7 +51,11 @@ export async function runExtensionLabels({github,context,prNumber,checkpoint=()=
     const batch=pending.slice(start,start+10),operation={labels:batch,status:'request_started'};
     result.operations.push(operation);checkpoint(result);
     try{await github.rest.issues.addLabels({owner,repo,issue_number:prNumber,labels:batch});operation.status='response_received';checkpoint(result);}
-    catch(error){operation.status='delivery_uncertain_requires_inspection';checkpoint(result);throw error;}
+    catch(error){
+      const rejected=Number.isInteger(error.status)&&error.status>=400&&error.status<500&&![408,409,429].includes(error.status);
+      operation.status=rejected?'rejected':'delivery_uncertain_requires_inspection';operation.http_status=error.status??null;
+      result.status='failed';result.error=error.message;result.delivery_uncertain=!rejected;checkpoint(result);throw error;
+    }
   }
   const observed=await github.paginate(github.rest.issues.listLabelsOnIssue,{owner,repo,issue_number:prNumber,per_page:100});
   if(plan.matched_labels.some(name=>!observed.some(l=>l.name.toLowerCase()===name.toLowerCase())))throw Error('Label readback mismatch');
