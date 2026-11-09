@@ -1,1 +1,0 @@
-print("recording fixture")

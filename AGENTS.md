@@ -1,1 +1,0 @@
-cli/azd/AGENTS.md

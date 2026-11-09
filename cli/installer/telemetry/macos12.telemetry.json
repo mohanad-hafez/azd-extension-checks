@@ -1,6 +1,0 @@
-{ 
-    "os": "macOS",
-    "isWsl": "False",
-    "terminal": "pwsh",
-    "osVersion": "12"
-}

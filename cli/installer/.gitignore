@@ -1,7 +1,0 @@
-.vs
-Debug/
-Release/
-packages/
-*.binlog
-*.log
-*.user

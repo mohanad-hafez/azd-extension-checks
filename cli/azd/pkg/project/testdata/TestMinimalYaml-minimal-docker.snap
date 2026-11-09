@@ -1,9 +1,0 @@
-name: minimal
-services:
-    minimal-docker:
-        project: ./src
-        host: containerapp
-        language: dotnet
-        docker:
-            path: ./Dockerfile
-

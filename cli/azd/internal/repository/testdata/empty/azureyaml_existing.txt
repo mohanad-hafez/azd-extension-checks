@@ -1,3 +1,0 @@
-name: webapp
-metadata: 
-  template: azd-test/webapptest@v1

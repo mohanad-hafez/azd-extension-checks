@@ -1,7 +1,0 @@
-import: ../../.vscode/cspell.yaml
-overrides:
-  - filename: internal/cmd/metadata.go
-    words:
-      - invopop
-words:
-  - colours

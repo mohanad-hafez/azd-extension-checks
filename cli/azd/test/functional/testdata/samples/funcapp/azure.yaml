@@ -1,8 +1,0 @@
-name: funcapp
-metadata: 
-  template: azd-test/functestapp@v1
-services:
-  func:
-    project: .
-    host: function
-    language: python

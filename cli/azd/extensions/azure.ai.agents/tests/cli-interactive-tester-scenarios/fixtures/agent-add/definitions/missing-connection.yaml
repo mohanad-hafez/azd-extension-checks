@@ -1,6 +1,0 @@
-kind: prompt
-name: support-agent
-model: gpt-4.1-mini
-instructions: Help the user.
-connections:
-  - missing-search

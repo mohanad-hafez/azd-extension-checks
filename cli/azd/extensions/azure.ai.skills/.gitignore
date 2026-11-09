@@ -1,9 +1,0 @@
-# Local test artifacts
-SKILL.md
-test-skill/
-test-min/
-test-*/
-*.zip
-*.tar.gz
-azd-ai-skills-*.log
-bin/

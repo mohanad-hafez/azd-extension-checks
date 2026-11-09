@@ -1,5 +1,0 @@
-import: ../../.vscode/cspell.yaml
-overrides:
-  - filename: internal/cmd/prompt_model.go
-    words:
-      - textinput

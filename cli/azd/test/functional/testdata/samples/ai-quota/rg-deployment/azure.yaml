@@ -1,3 +1,0 @@
-name: ai-quota-rg
-metadata:
-  template: azd-test/ai-quota-rg@v1

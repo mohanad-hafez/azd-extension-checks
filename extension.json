@@ -1,0 +1,111 @@
+{
+  "inputs": {
+    "pr": {
+      "number": 1,
+      "title": "Maintenance check",
+      "body": "Check extension label behavior.",
+      "labels": []
+    },
+    "files": [
+      {
+        "filename": "cli/azd/extensions/azure.ai.agents/.checks/label-state.txt",
+        "patch": "@@ -0,0 +1 @@\n+Maintenance state check."
+      }
+    ],
+    "labels": [
+      {
+        "name": "area/extensions",
+        "description": "Extensions (general)"
+      },
+      {
+        "name": "ext-agents",
+        "description": "azure.ai.agents extension"
+      },
+      {
+        "name": "ext-appservice",
+        "description": "azure.appservice extension"
+      },
+      {
+        "name": "ext-coding-agent",
+        "description": "azure.coding-agent extension"
+      },
+      {
+        "name": "ext-concurx",
+        "description": "microsoft.azd.concurx extension"
+      },
+      {
+        "name": "ext-connections",
+        "description": "azure.ai.connections extension"
+      },
+      {
+        "name": "ext-content-understanding",
+        "description": "azure.ai.content-understanding extension"
+      },
+      {
+        "name": "ext-dataset",
+        "description": "azure.ai.dataset extension"
+      },
+      {
+        "name": "ext-demo",
+        "description": "microsoft.azd.demo extension"
+      },
+      {
+        "name": "ext-evals",
+        "description": "azure.ai.evaluations extension"
+      },
+      {
+        "name": "ext-finetune",
+        "description": "azure.ai.finetune extension"
+      },
+      {
+        "name": "ext-foundry",
+        "description": "microsoft.foundry meta package or Foundry/AI extensions overall. Not individual extension issues."
+      },
+      {
+        "name": "ext-inspector",
+        "description": "azure.ai.inspector extension"
+      },
+      {
+        "name": "ext-logicapps",
+        "description": "azure.logicappsstandard extension"
+      },
+      {
+        "name": "ext-models",
+        "description": "azure.ai.models extension"
+      },
+      {
+        "name": "ext-projects",
+        "description": "azure.ai.projects extension"
+      },
+      {
+        "name": "ext-rle",
+        "description": "azure.ai.rle extension"
+      },
+      {
+        "name": "ext-routines",
+        "description": "azure.ai.routines extension"
+      },
+      {
+        "name": "ext-search",
+        "description": "azure.ai.search extension"
+      },
+      {
+        "name": "ext-skills",
+        "description": "azure.ai.skills extension"
+      },
+      {
+        "name": "ext-toolboxes",
+        "description": "azure.ai.toolboxes extension"
+      },
+      {
+        "name": "ext-training",
+        "description": "azure.ai.training extension"
+      },
+      {
+        "name": "ext-x",
+        "description": "microsoft.azd.extensions developer extension (azd x)"
+      }
+    ]
+  },
+  "output_description": "Submit only a JSON object with add_labels, an array of existing label names to add."
+}
